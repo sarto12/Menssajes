@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Citas Bíblicas por Emoción</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>Citas Bíblicas según tu Emoción</h1>
+    <div class="emocion-selector">
+        <label for="emocion">¿Cómo te sientes hoy Princesa?</label>
+        <select id="emocion">
+    <option value="">Selecciona una emoción</option>
+    <option value="felicidad">Felicidad</option>
+    <option value="tristeza">Tristeza</option>
+    <option value="ansiedad">Ansiedad</option>
+    <option value="miedo">Miedo</option>
+    <option value="esperanza">Esperanza</option>
+    <option value="gratitud">Gratitud</option>
+    <option value="enojo">Enojo</option>
+    <option value="soledad">Soledad</option>
+    <option value="amor">Amor</option>
+    <option value="confianza">Confianza</option>
+    <option value="perdon">Perdón</option>
+    <option value="paz">Paz</option>
+</select>
+    </div>
+    <div class="cita" id="cita"></div>
+    <a href="presentacion.html"
+   style="display:block;
+          margin:30px auto 0 auto;
+          padding:12px 36px;
+          background:#64b5f6;
+          color:#fff;
+          border-radius:50px;
+          border:none;
+          font-weight:bold;
+          cursor:pointer;
+          text-align:center;
+          text-decoration:none;
+          transition:background 0.3s, box-shadow 0.3s;
+          box-shadow:0 4px 12px rgba(240,98,146,0.15);
+          font-size:1.1em;
+          width:max-content;">
+    Ir a la Presentación
+</a>
+    <script src="app.js"></script>
+</body>
+</html>

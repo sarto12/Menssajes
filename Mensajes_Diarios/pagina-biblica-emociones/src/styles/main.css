@@ -1,0 +1,189 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #b3c6f7 0%, #e3f0ff 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    color: #1565c0;
+    margin-top: 40px;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px #e3f0ff;
+}
+
+.emocion-selector {
+    margin: 30px 0 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.emocion-selector label {
+    font-size: 1.2em;
+    color: #1976d2;
+    margin-right: 10px;
+}
+
+.emocion-selector select {
+    padding: 12px 18px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    border: 1.5px solid #64b5f6;
+    background: #e3f2fd;
+    color: #1565c0;
+    outline: none;
+    transition: border 0.3s;
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+    min-width: 180px;
+}
+
+.emocion-selector select:focus {
+    border: 2px solid #1976d2;
+}
+
+.cita {
+    background: #f7fbff;
+    border: 2px solid #90caf9;
+    border-radius: 18px;
+    padding: 30px 20px;
+    margin: 30px auto 0 auto;
+    max-width: 650px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(33, 150, 243, 0.13);
+    position: relative;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cita:before {
+    font-size: 2em;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.cita p {
+    font-size: 1.3em;
+    color: #1565c0;
+    font-style: italic;
+    margin: 0;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+a[href$=".html"], button, .btn {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 12px 36px;
+    background: #64b5f6;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(33,150,243,0.15);
+    font-size: 1.1em;
+    width: max-content;
+}
+
+a[href$=".html"]:hover, button:hover, .btn:hover {
+    background: #1976d2;
+}
+
+.presentacion-container {
+    background: #f7fbff;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(33, 150, 243, 0.10);
+    max-width: 650px;
+    margin: 40px auto 0 auto;
+    padding: 30px 30px;
+    text-align: center;
+}
+
+.presentacion-container h2 {
+    color: #1976d2;
+    margin-bottom: 18px;
+}
+
+.presentacion-container p {
+    color: #1565c0;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+}
+
+.firma {
+    color: #1976d2;
+    font-size: 1em;
+    margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+    .cita {
+        max-width: 95vw;
+        padding: 18px 8px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .presentacion-container {
+        padding: 18px 8px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.3em;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+    .emocion-selector {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    .emocion-selector label {
+        margin-right: 0;
+        font-size: 1em;
+    }
+    .emocion-selector select {
+        font-size: 1em;
+        padding: 10px 12px;
+        min-width: 100%;
+    }
+    .cita {
+        padding: 14px 5px;
+        max-width: 98vw;
+        font-size: 1em;
+    }
+    .cita:before {
+        left: 10px;
+        top: 10px;
+        font-size: 1.3em;
+    }
+    .cita p {
+        font-size: 1em;
+    }
+    .presentacion-container {
+        padding: 12px 4px;
+        margin-top: 10px;
+    }
+    .presentacion-container h2 {
+        font-size: 1.1em;
+    }
+    .presentacion-container p {
+        font-size: 0.98em;
+    }
+}

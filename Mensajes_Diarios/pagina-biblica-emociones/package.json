@@ -1,0 +1,15 @@
+{
+  "name": "pagina-biblica-emociones",
+  "version": "1.0.0",
+  "description": "Una página web que proporciona citas bíblicas basadas en las emociones del usuario.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

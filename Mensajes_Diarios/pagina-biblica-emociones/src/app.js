@@ -1,0 +1,186 @@
+const emocionesCitas = {
+  "felicidad": [
+    { "cita": "Este es el día que hizo el Señor; nos gozaremos y alegraremos en él.", "referencia": "Salmos 118:24" },
+    { "cita": "El gozo del Señor es mi fortaleza.", "referencia": "Nehemías 8:10" },
+    { "cita": "Me mostrarás la senda de la vida; en tu presencia hay plenitud de gozo.", "referencia": "Salmos 16:11" },
+    { "cita": "Regocijaos en el Señor siempre. Otra vez digo: ¡Regocijaos!", "referencia": "Filipenses 4:4" },
+    { "cita": "Alégrense los cielos y gócese la tierra.", "referencia": "Salmos 96:11" },
+    { "cita": "El corazón alegre hermosea el rostro.", "referencia": "Proverbios 15:13" },
+    { "cita": "Cantad alegres a Dios, habitantes de toda la tierra.", "referencia": "Salmos 100:1" },
+    { "cita": "El Señor ha hecho grandes cosas con nosotros; estamos alegres.", "referencia": "Salmos 126:3" },
+    { "cita": "Alegraos en la esperanza; sufridos en la tribulación; constantes en la oración.", "referencia": "Romanos 12:12" },
+    { "cita": "Gócense y alégrense los que buscan a Dios.", "referencia": "Salmos 70:4" }
+  ],
+  "tristeza": [
+    { "cita": "El Señor está cerca de los quebrantados de corazón y salva a los de espíritu contrito.", "referencia": "Salmos 34:18" },
+    { "cita": "Bienaventurados los que lloran, porque ellos recibirán consolación.", "referencia": "Mateo 5:4" },
+    { "cita": "Él enjugará toda lágrima de los ojos de ellos.", "referencia": "Apocalipsis 21:4" },
+    { "cita": "Aunque ande en valle de sombra de muerte, no temeré mal alguno, porque tú estarás conmigo.", "referencia": "Salmos 23:4" },
+    { "cita": "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar.", "referencia": "Mateo 11:28" },
+    { "cita": "Llorad con los que lloran.", "referencia": "Romanos 12:15" },
+    { "cita": "El llanto puede durar toda la noche, pero a la mañana vendrá la alegría.", "referencia": "Salmos 30:5" },
+    { "cita": "Dios enjugará toda lágrima de los ojos de ellos.", "referencia": "Isaías 25:8" },
+    { "cita": "No se turbe vuestro corazón; creéis en Dios, creed también en mí.", "referencia": "Juan 14:1" },
+    { "cita": "El Señor es mi pastor; nada me faltará.", "referencia": "Salmos 23:1" }
+  ],
+  "ansiedad": [
+    { "cita": "Echad toda vuestra ansiedad sobre él, porque él tiene cuidado de vosotros.", "referencia": "1 Pedro 5:7" },
+    { "cita": "No os afanéis por nada, sino que en toda oración y ruego, con acción de gracias, sean conocidas vuestras peticiones delante de Dios.", "referencia": "Filipenses 4:6" },
+    { "cita": "Busqué al Señor, y él me oyó, y me libró de todos mis temores.", "referencia": "Salmos 34:4" },
+    { "cita": "Lanzando toda vuestra ansiedad sobre él, porque él tiene cuidado de vosotros.", "referencia": "1 Pedro 5:7" },
+    { "cita": "Confía en el Señor con todo tu corazón y no te apoyes en tu propia prudencia.", "referencia": "Proverbios 3:5" },
+    { "cita": "Venid a mí todos los que estáis trabajados y cargados, y yo os haré descansar.", "referencia": "Mateo 11:28" },
+    { "cita": "El Señor peleará por vosotros, y vosotros estaréis tranquilos.", "referencia": "Éxodo 14:14" },
+    { "cita": "En paz me acostaré, y asimismo dormiré; porque solo tú, Señor, me haces vivir confiado.", "referencia": "Salmos 4:8" },
+    { "cita": "Cuando siento miedo, pongo en ti mi confianza.", "referencia": "Salmos 56:3" },
+    { "cita": "El Señor es mi luz y mi salvación; ¿de quién temeré?", "referencia": "Salmos 27:1" }
+  ],
+  "miedo": [
+    { "cita": "No temas, porque yo estoy contigo; no desmayes, porque yo soy tu Dios.", "referencia": "Isaías 41:10" },
+    { "cita": "En el amor no hay temor, sino que el perfecto amor echa fuera el temor.", "referencia": "1 Juan 4:18" },
+    { "cita": "El Señor es mi luz y mi salvación; ¿de quién temeré?", "referencia": "Salmos 27:1" },
+    { "cita": "Cuando siento miedo, pongo en ti mi confianza.", "referencia": "Salmos 56:3" },
+    { "cita": "Jehová está conmigo; no temeré lo que me pueda hacer el hombre.", "referencia": "Salmos 118:6" },
+    { "cita": "Aunque ande en valle de sombra de muerte, no temeré mal alguno, porque tú estarás conmigo.", "referencia": "Salmos 23:4" },
+    { "cita": "No se turbe vuestro corazón, ni tenga miedo.", "referencia": "Juan 14:27" },
+    { "cita": "El ángel del Señor acampa alrededor de los que le temen, y los defiende.", "referencia": "Salmos 34:7" },
+    { "cita": "Dios no nos ha dado espíritu de cobardía, sino de poder, de amor y de dominio propio.", "referencia": "2 Timoteo 1:7" },
+    { "cita": "No temas, porque yo te redimí; te puse nombre, mío eres tú.", "referencia": "Isaías 43:1" }
+  ],
+  "esperanza": [
+    { "cita": "Porque yo sé los planes que tengo para vosotros, dice el Señor, planes de bienestar y no de calamidad, para daros un futuro y una esperanza.", "referencia": "Jeremías 29:11" },
+    { "cita": "El que tiene esperanza en el Señor es como un árbol plantado junto a aguas.", "referencia": "Jeremías 17:7-8" },
+    { "cita": "Bendito el hombre que confía en el Señor, cuya confianza es el Señor.", "referencia": "Jeremías 17:7" },
+    { "cita": "Alegraos en la esperanza; sufridos en la tribulación; constantes en la oración.", "referencia": "Romanos 12:12" },
+    { "cita": "El Dios de esperanza os llene de todo gozo y paz en el creer.", "referencia": "Romanos 15:13" },
+    { "cita": "Espera en el Señor; esfuérzate y aliéntese tu corazón.", "referencia": "Salmos 27:14" },
+    { "cita": "Bueno es el Señor a los que en él esperan, al alma que le busca.", "referencia": "Lamentaciones 3:25" },
+    { "cita": "Pero los que esperan a Jehová tendrán nuevas fuerzas.", "referencia": "Isaías 40:31" },
+    { "cita": "Mi porción es Jehová, dijo mi alma; por tanto, en él esperaré.", "referencia": "Lamentaciones 3:24" },
+    { "cita": "Guarda silencio ante Jehová, y espera en él.", "referencia": "Salmos 37:7" }
+  ],
+  // Para agregar en tu objeto emocionesCitas:
+
+"gratitud": [
+  { "cita": "Dad gracias en todo, porque esta es la voluntad de Dios para con vosotros en Cristo Jesús.", "referencia": "1 Tesalonicenses 5:18" },
+  { "cita": "Alabad a Jehová, porque él es bueno; porque para siempre es su misericordia.", "referencia": "Salmos 107:1" },
+  { "cita": "Entrad por sus puertas con acción de gracias, por sus atrios con alabanza.", "referencia": "Salmos 100:4" },
+  { "cita": "Dando siempre gracias por todo al Dios y Padre, en el nombre de nuestro Señor Jesucristo.", "referencia": "Efesios 5:20" },
+  { "cita": "Ofreced sacrificios de alabanza y dad gracias a su nombre.", "referencia": "Hebreos 13:15" },
+  { "cita": "Dad gracias al Señor, invocad su nombre, dad a conocer sus obras entre los pueblos.", "referencia": "Salmos 105:1" },
+  { "cita": "Bendice, alma mía, a Jehová, y no olvides ninguno de sus beneficios.", "referencia": "Salmos 103:2" },
+  { "cita": "Dad gracias al Señor, porque él es bueno; su gran amor perdura para siempre.", "referencia": "Salmos 136:1" },
+  { "cita": "Y todo lo que hacéis, sea de palabra o de hecho, hacedlo todo en el nombre del Señor Jesús, dando gracias a Dios Padre por medio de él.", "referencia": "Colosenses 3:17" },
+  { "cita": "Den gracias al Señor, invoquen su nombre; den a conocer sus obras entre los pueblos.", "referencia": "1 Crónicas 16:8" }
+],
+"enojo": [
+  { "cita": "Airaos, pero no pequéis; no se ponga el sol sobre vuestro enojo.", "referencia": "Efesios 4:26" },
+  { "cita": "La blanda respuesta quita la ira, mas la palabra áspera hace subir el furor.", "referencia": "Proverbios 15:1" },
+  { "cita": "El necio da rienda suelta a toda su ira, mas el sabio al fin la sosiega.", "referencia": "Proverbios 29:11" },
+  { "cita": "Mejor es el que tarda en airarse que el fuerte.", "referencia": "Proverbios 16:32" },
+  { "cita": "El hombre iracundo suscita contiendas; pero el que tarda en airarse apacigua la rencilla.", "referencia": "Proverbios 15:18" },
+  { "cita": "No te apresures en tu espíritu a enojarte, porque el enojo reposa en el seno de los necios.", "referencia": "Eclesiastés 7:9" },
+  { "cita": "El que es tardo para la ira es grande de entendimiento.", "referencia": "Proverbios 14:29" },
+  { "cita": "El hombre iracundo provoca peleas, pero el que es paciente las apacigua.", "referencia": "Proverbios 15:18" },
+  { "cita": "No paguéis a nadie mal por mal; procurad lo bueno delante de todos los hombres.", "referencia": "Romanos 12:17" },
+  { "cita": "No seas vencido de lo malo, sino vence con el bien el mal.", "referencia": "Romanos 12:21" }
+],
+"soledad": [
+  { "cita": "No te desampararé, ni te dejaré.", "referencia": "Hebreos 13:5" },
+  { "cita": "Aunque mi padre y mi madre me dejaran, con todo, Jehová me recogerá.", "referencia": "Salmos 27:10" },
+  { "cita": "He aquí, yo estoy con vosotros todos los días, hasta el fin del mundo.", "referencia": "Mateo 28:20" },
+  { "cita": "Cuando pases por las aguas, yo estaré contigo.", "referencia": "Isaías 43:2" },
+  { "cita": "Jehová está cerca de los quebrantados de corazón.", "referencia": "Salmos 34:18" },
+  { "cita": "Clama a mí, y yo te responderé.", "referencia": "Jeremías 33:3" },
+  { "cita": "Dios es nuestro amparo y fortaleza, nuestro pronto auxilio en las tribulaciones.", "referencia": "Salmos 46:1" },
+  { "cita": "El Señor va delante de ti; él estará contigo, no te dejará ni te desamparará.", "referencia": "Deuteronomio 31:8" },
+  { "cita": "Echa sobre Jehová tu carga, y él te sustentará.", "referencia": "Salmos 55:22" },
+  { "cita": "El Señor es mi pastor; nada me faltará.", "referencia": "Salmos 23:1" }
+],
+"amor": [
+  { "cita": "El amor es sufrido, es benigno; el amor no tiene envidia.", "referencia": "1 Corintios 13:4" },
+  { "cita": "Y sobre todas estas cosas vestíos de amor, que es el vínculo perfecto.", "referencia": "Colosenses 3:14" },
+  { "cita": "Amados, amémonos unos a otros; porque el amor es de Dios.", "referencia": "1 Juan 4:7" },
+  { "cita": "En esto consiste el amor: no en que nosotros hayamos amado a Dios, sino en que él nos amó a nosotros.", "referencia": "1 Juan 4:10" },
+  { "cita": "El que no ama, no ha conocido a Dios; porque Dios es amor.", "referencia": "1 Juan 4:8" },
+  { "cita": "Este es mi mandamiento: Que os améis unos a otros, como yo os he amado.", "referencia": "Juan 15:12" },
+  { "cita": "El amor nunca deja de ser.", "referencia": "1 Corintios 13:8" },
+  { "cita": "Sobre todo, ámense los unos a los otros profundamente, porque el amor cubre multitud de pecados.", "referencia": "1 Pedro 4:8" },
+  { "cita": "Y nosotros hemos conocido y creído el amor que Dios tiene para con nosotros.", "referencia": "1 Juan 4:16" },
+  { "cita": "Permanezcan en mi amor.", "referencia": "Juan 15:9" }
+],
+"confianza": [
+  { "cita": "Confía en el Señor con todo tu corazón y no te apoyes en tu propia prudencia.", "referencia": "Proverbios 3:5" },
+  { "cita": "En Dios he confiado; no temeré.", "referencia": "Salmos 56:4" },
+  { "cita": "El que confía en el Señor es bienaventurado.", "referencia": "Proverbios 16:20" },
+  { "cita": "Bendito el hombre que confía en el Señor.", "referencia": "Jeremías 17:7" },
+  { "cita": "En paz me acostaré, y asimismo dormiré; porque solo tú, Señor, me haces vivir confiado.", "referencia": "Salmos 4:8" },
+  { "cita": "El Señor es mi luz y mi salvación; ¿de quién temeré?", "referencia": "Salmos 27:1" },
+  { "cita": "Jehová es mi fortaleza y mi escudo; en él confió mi corazón.", "referencia": "Salmos 28:7" },
+  { "cita": "El que teme al hombre caerá, pero el que confía en el Señor será exaltado.", "referencia": "Proverbios 29:25" },
+  { "cita": "Encomienda a Jehová tu camino, y confía en él; y él hará.", "referencia": "Salmos 37:5" },
+  { "cita": "El Señor es bueno, fortaleza en el día de la angustia; y conoce a los que en él confían.", "referencia": "Nahúm 1:7" }
+],
+"perdon": [
+  { "cita": "Soportándoos unos a otros, y perdonándoos unos a otros.", "referencia": "Colosenses 3:13" },
+  { "cita": "Perdona nuestras ofensas, como también nosotros perdonamos a los que nos ofenden.", "referencia": "Mateo 6:12" },
+  { "cita": "Si confesamos nuestros pecados, él es fiel y justo para perdonar nuestros pecados.", "referencia": "1 Juan 1:9" },
+  { "cita": "Sed más bien amables unos con otros, misericordiosos, perdonándoos unos a otros.", "referencia": "Efesios 4:32" },
+  { "cita": "No juzguéis, y no seréis juzgados; no condenéis, y no seréis condenados; perdonad, y seréis perdonados.", "referencia": "Lucas 6:37" },
+  { "cita": "El que encubre sus pecados no prosperará; mas el que los confiesa y se aparta alcanzará misericordia.", "referencia": "Proverbios 28:13" },
+  { "cita": "Padre, perdónalos, porque no saben lo que hacen.", "referencia": "Lucas 23:34" },
+  { "cita": "De la manera que Cristo os perdonó, así también hacedlo vosotros.", "referencia": "Colosenses 3:13" },
+  { "cita": "Si tu hermano peca contra ti, perdónalo.", "referencia": "Lucas 17:3" },
+  { "cita": "El amor cubre multitud de pecados.", "referencia": "1 Pedro 4:8" }
+],
+"paz": [
+  { "cita": "La paz os dejo, mi paz os doy; yo no os la doy como el mundo la da.", "referencia": "Juan 14:27" },
+  { "cita": "Y la paz de Dios, que sobrepasa todo entendimiento, guardará vuestros corazones y vuestros pensamientos en Cristo Jesús.", "referencia": "Filipenses 4:7" },
+  { "cita": "En paz me acostaré, y asimismo dormiré; porque solo tú, Señor, me haces vivir confiado.", "referencia": "Salmos 4:8" },
+  { "cita": "El Señor dará poder a su pueblo; el Señor bendecirá a su pueblo con paz.", "referencia": "Salmos 29:11" },
+  { "cita": "Bienaventurados los pacificadores, porque ellos serán llamados hijos de Dios.", "referencia": "Mateo 5:9" },
+  { "cita": "El Dios de paz estará con vosotros.", "referencia": "Filipenses 4:9" },
+  { "cita": "La paz de Cristo gobierne en vuestros corazones.", "referencia": "Colosenses 3:15" },
+  { "cita": "Grande paz tienen los que aman tu ley, y no hay para ellos tropiezo.", "referencia": "Salmos 119:165" },
+  { "cita": "El mismo Señor de paz os dé siempre paz en toda manera.", "referencia": "2 Tesalonicenses 3:16" },
+  { "cita": "Tú guardarás en completa paz a aquel cuyo pensamiento en ti persevera, porque en ti ha confiado.", "referencia": "Isaías 26:3" }
+]
+};
+
+// Guardar los índices ya mostrados para cada emoción
+const citasMostradas = {};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const emocionSelect = document.getElementById('emocion');
+    const citaDiv = document.getElementById('cita');
+
+    emocionSelect.addEventListener('change', () => {
+        const emocion = emocionSelect.value;
+        citaDiv.innerHTML = '';
+        if (emocion && emocionesCitas[emocion]) {
+            // Inicializa el array de índices si no existe
+            if (!citasMostradas[emocion]) {
+                citasMostradas[emocion] = [];
+            }
+
+            // Si ya se mostraron todas, reinicia
+            if (citasMostradas[emocion].length === emocionesCitas[emocion].length) {
+                citasMostradas[emocion] = [];
+            }
+
+            // Filtra los índices que no se han mostrado
+            const disponibles = emocionesCitas[emocion]
+                .map((_, idx) => idx)
+                .filter(idx => !citasMostradas[emocion].includes(idx));
+
+            // Selecciona uno aleatorio de los disponibles
+            const randomIdx = disponibles[Math.floor(Math.random() * disponibles.length)];
+            citasMostradas[emocion].push(randomIdx);
+
+            const citaObj = emocionesCitas[emocion][randomIdx];
+            citaDiv.innerHTML = `<p>${citaObj.cita}<br><span style="font-size:0.9em;color:#ad1457;"><b>${citaObj.referencia}</b></span></p>`;
+        } else {
+            citaDiv.innerHTML = "<p>Por favor, selecciona una emoción.</p>";
+        }
+    });
+});
